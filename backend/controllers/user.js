@@ -2,6 +2,8 @@ import { createError } from "../error.js";
 import User from "../models/User.js";
 
 export const update = async (req, res, next) => {
+  // req.params.id from /:id
+  // req.user.id from jwt
   if (req.params.id === req.user.id) {
     try {
       const updatedUser = await User.findByIdAndUpdate(
