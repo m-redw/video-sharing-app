@@ -2,8 +2,8 @@ import express from "express";
 import mongoose, { mongo } from "mongoose";
 import dotenv from "dotenv";
 import userRoutes from "./routes/users.js";
-import videoRoutes from "./routes/users.js";
-import commentRoutes from "./routes/users.js";
+import videoRoutes from "./routes/videos.js";
+import commentRoutes from "./routes/comments.js";
 import authRoutes from "./routes/auth.js";
 import cookieParser from "cookie-parser";
 
